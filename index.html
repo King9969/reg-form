@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cogent Developers Network Registration Form</title>
+		<link rel="stylesheet" href="index.css">
+		<style>
+
+  
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<img src="https://surveyheartmedia.s3.ap-south-1.amazonaws.com/logos/cogentwebservices@gmail.com_logo.png?r=0.8387644683388993" alt="">
+			<h1>Cogent Developers Network Registration Form</h1>
+			<form action="submit.php" method="POST" enctype="multipart/form-data">
+				<h2>1. Name:</h2>
+				<div class="form-box">
+					<input type="text" id="name" name="name" required="">
+				</div>
+				<h2 for="email">2. E-Mail:</h2>
+				<div class="form-box">
+					<input type="email" id="email" name="email" required="">
+				</div>
+				<h2 for="grad_year">3. Graduation Year:</h2>
+				<div class="form-box">
+					<input type="number" id="grad_year" name="grad_year" required="">
+				</div>
+				<h2 for="mobile">4. Mobile Number:</h2>
+				<div class="form-box">
+					<input type="tel" id="mobile" name="mobile" required="">
+				</div>
+				<h2 for="whatsapp">5. Whatsapp Number:</h2>
+				<div class="form-box">
+					<input type="tel" id="whatsapp" name="whatsapp" required="">
+				</div>
+				<h2 for="skills">6. Technical Skills:</h2>
+				<div class="form-box" style="color:black; align-items:flex-start ;flex-direction: column;">
+					<div class="checkbox-item">
+						<input type="checkbox" name="skills[]" value="React Native">
+						<span>C++</span>
+					</div>
+					<div class="checkbox-item">
+						<input type="checkbox" name="skills[]" value="React Native">
+						<span>React</span>
+					</div>
+					<div class="checkbox-item">
+						<input type="checkbox" name="skills[]" value="React Native">
+						<span>java</span>
+					</div>
+					<div class="checkbox-item">
+						<input type="checkbox" name="skills[]" value="React Native">
+						<span>python</span>
+					</div>
+					<div class="checkbox-item">
+						<input type="checkbox" name="skills[]" value="React Native">
+						<span>c#</span>
+					</div>
+				</div>
+				<h2 for="other_skills">7. Other:</h2>
+				<div class="form-box">
+					<input type="text" id="other_skills" name="other_skills">
+				</div>
+				<h2 for="introduction">8. Short Introduction About Me:</h2>
+				<div class="form-box">
+					<textarea id="introduction" name="introduction" required=""></textarea>
+				</div>
+				<h2 for="resume">9. Resume (Max 5MB):</h2>
+				<div class="form-box">
+					<input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required="">
+				</div>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+		<div class="footer">
+			<p id="answered-count">0 questions answered</p>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

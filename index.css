@@ -1,0 +1,139 @@
+body {
+	position: relative;
+	font-family: Arial, sans-serif;
+}
+
+body::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("/my/meeting_hand.jpeg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	z-index: -1;
+}
+
+span {
+	padding-left: 50px;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 5%;
+}
+
+.form-box {
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(255, 255, 255, 1);
+	padding: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+
+.form-box input, .form-box textarea {
+	font-size: 20px;
+	width: 100%;
+	padding: 8px;
+	border-radius: 3px;
+	border-top: none;
+	border-right: none;
+	border-bottom: 1px solid rgba(224, 209, 209, 1);
+	border-left: none;
+	outline: none;
+	margin-top: 5px;
+}
+
+h2 {
+	color: rgba(255, 255, 255, 1);
+	margin: 0;
+	padding: 2%;
+	font-size: 20px;
+	background-color: rgba(99, 66, 36, 1);
+}
+
+form {
+	font-size: 20px;
+	background-color: rgba(0, 0, 0, 0);
+	border-radius: 5px;
+	padding: 20px;
+	max-width: 750px;
+	width: 100%;
+}
+
+img {
+    scale: 0.5;
+}
+
+h1 {
+	color: rgba(255, 255, 255, 1);
+	text-align: center;
+	margin-bottom: 20px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.label-group {
+	margin-bottom: 15px;
+}
+
+.label-group label {
+	display: block;
+	margin-bottom: 5px;
+	color: rgba(41, 99, 36, 1);
+}
+
+.label-group input, .label-group textarea {
+	width: 100%;
+	padding: 8px;
+	border-radius: 3px;
+	border: 1px solid rgba(204, 204, 204, 1);
+	margin-top: 5px;
+}
+
+input[type="submit"] {
+    background-color: rgba(76, 175, 80, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 10px 20px;
+    border: none;
+    font-size: 24px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 45%;
+  }
+
+input[type="submit"]:hover {
+	background-color: rgba(69, 160, 73, 1);
+}
+
+input[type="file"] {
+	margin-top: 10px;
+}
+
+.checkbox-item {
+	display: flex;
+	padding: 5px;
+}
+
+.checkbox-item input[type="checkbox"] {
+	margin-right: 5px;
+}
+
+.footer {
+	background-color: rgba(99, 66, 36, 1);
+	padding: 10px;
+	color: rgba(255, 255, 255, 1);
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
